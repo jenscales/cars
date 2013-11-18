@@ -1,4 +1,11 @@
 class Car
+	@@total_car_count = 0
+
+	#T
+	def self.total_car_count
+		@@total_car_count
+	end
+
 	def to_s()
 		"I'm a car! I've driven #{@distance} and have #{@fuel} gallons gas left"
 	end
